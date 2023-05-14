@@ -19,8 +19,10 @@ X *string_ponteiro(std::string s)
 	return (X *)ret;
 }
 
+int number = 0;
+
 class animal{
 public:
     animal(){}
-    void barulho(){std::cout << "miau\n";}
+    void barulho(){std::cout << "miau\n";std::cout << number << std::endl;}
 };

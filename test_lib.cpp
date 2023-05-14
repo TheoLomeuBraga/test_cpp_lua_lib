@@ -8,6 +8,7 @@ public:
 };
 
 int pegar_gato(lua_State *L) {
+    number = 10;
     lua_pushstring(L,ponteiro_string(new gato()).c_str());
     return 1;
 }

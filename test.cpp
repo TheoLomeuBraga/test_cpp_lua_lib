@@ -21,6 +21,8 @@ int main(){
     luaL_dofile(L, "carregar_lib.lua");
 
     lua_register(L, "applicar_ponteiro_animal", applicar_ponteiro_animal);
+
+    number = 3;
     lua_getglobal(L, "run_test");
     lua_pcall(L, 0, 1, 0);
 
